@@ -1,4 +1,4 @@
-#include "DatabaseHandler.h"
+#include "../include/DatabaseHandler.h"
 #include <iostream>
 #include <stdexcept>
 
@@ -12,7 +12,7 @@ DatabaseHandler::DatabaseHandler(const std::string& host, const std::string& por
 
 DatabaseHandler::~DatabaseHandler() {}
 
-std::map<std::string, std::vector<std::pair<std::string, double>>> DatabaseHandler::fetchData(string sqlStr) {
+std::map<std::string, std::vector<std::pair<std::string, double>>> DatabaseHandler::fetchData(std::string sqlStr) {
     std::map<std::string, std::vector<std::pair<std::string, double>>> data;
 
     try {

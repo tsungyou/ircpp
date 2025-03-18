@@ -1,4 +1,4 @@
-#include "StockSignalGenerator.h"
+#include "../include/StockSignalGenerator.h"
 #include <iostream>
 #include <cmath> // for std::pow
 
@@ -30,7 +30,7 @@ std::vector<int> StockSignalGenerator::getSignal(int signal_threshold) {
         for (size_t i = index - 5; i < static_cast<size_t>(index); ++i) {
             diff_5d += calculatePctChange(i);
         }
-        
+            
         if (extreme_counter < extreme_last_for_days) {
             extreme_counter++;
             signals[index] = signal;

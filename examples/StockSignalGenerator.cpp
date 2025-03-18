@@ -1,5 +1,5 @@
 #include <iostream>
-#include "StockSignalGenerator.h"
+#include "../include/StockSignalGenerator.h"
 
 int main() {
     // 假設這是我們的股市數據（收盤價）

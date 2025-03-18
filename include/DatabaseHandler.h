@@ -14,8 +14,10 @@ public:
                     const std::string& dbname);
     ~DatabaseHandler();
 
-    std::map<std::string, std::vector<str::pair<std::string, double>>> fetchData(string sqlStr);
+    std::map<std::string, std::vector<std::pair<std::string, double>>> fetchData(std::string sqlStr);
 
 private:
     std::string connection_str;
 };
+
+#endif

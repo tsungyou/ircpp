@@ -1,4 +1,4 @@
-#include "DatabaseHandler.h"
+#include "../include/DatabaseHandler.h"
 #include <iostream>
 
 int main() {
@@ -6,7 +6,7 @@ int main() {
     DatabaseHandler db("10.188.200.16", "5432", "jimmy", "123123", "tw");
 
     // 取得查詢結果
-    auto data = db.fetchData();
+    auto data = db.fetchData("SELECT * from price limit 100;");
 
     // 顯示結果
     for (const auto& entry : data) {
